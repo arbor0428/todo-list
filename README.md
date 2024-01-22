@@ -2,12 +2,15 @@
 
 ### 투두앱에서 구현된 기능들 
 
+- <b>날짜 선택:</b> datepicker를 활용해서 날짜 표시 및 변경을 할 수 있습니다.
+- <b>이름 입력:</b> useRef와 useState hook를 활용해서 사용자 이름 입력 및 변경을 할 수 있습니다.
+- <b>타이머 기능:</b> useState hook를 활용해서 시작, 정지, 리셋 기능이 포함된 타이머를 구현합니다.
 - <b>전체 아이템 표시:</b> useState hook를 활용해서 현재의 모든 할 일 항목을 배열로 처리해서 보여줍니다.
 - <b>아이템 추가/삭제:</b> useState hook를 활용해서 새로운 할 일 항목을 기존 배열에 추가하거나 기존 항목을 삭제할 수 있습니다.
 - <b>아이템 체크박스:</b> 아이템의 staus 상태 값을 변경해서 완료된 항목을 표시합니다.
 - <b>아이템 필터링:</b> useState hook를 활용해서 특정 기준에 따라 할 일 항목을 필터링하여 보여줄 수 있습니다. (예: 마감 기한, 중요도 등)
 - <b>다크 모드 지원:</b> useState, useEffect hook과 tailwindcss, createContext()를 활용해서 다크 모드를 구현합니다.
-- <b>로컬 스토리지 저장:</b> useState, useEffect를 활용해서 사용자의 할 일 목록을 로컬 스토리지에 저장하여 나중에 앱을 다시 열 때 이전 상태를 유지할 수 있습니다.
+- <b>로컬 스토리지 저장:</b> useState, useEffect를 활용해서 사용자 이름, 사용자의 할 일 목록을 로컬 스토리지에 저장하여 나중에 앱을 다시 열 때 이전 상태를 유지할 수 있습니다.
 
 ## 완성작 보기 
 
@@ -28,3 +31,4 @@
 - react-icons를 설치합니다. `npm install react-icon ==save`
 - UUID를 설치합니다 `npm install uuid`
 - tailwindcss를 설치합니다. `npm install -D tailwindcss`
+- datepicker를 설치합니다. `npm install react-datepicker --save`
