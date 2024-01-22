@@ -1,10 +1,8 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
     align-items: center;
-    background-color: var(--color-bg-dark);
-    border-bottom: 1px solid var(--color-grey);
 }
 
 .toggle {
@@ -20,28 +18,57 @@
     color: var(--color-accent);
 }
 
-.filters {
+.calendar {
+    display: flex;
+    align-items: center;
+    height: 46px;
+}
+
+.calendar p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.react-datepicker-wrapper {
+    width: 200px;
+}
+
+.datePicker {
+    align-items: center;
+    border: 1px solid var(--color-bg-dark2);
+    border-radius: 4px;
+    background-color: var(--color-bg-dark2);
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    color: var(--color-accent);
+    text-align: center;
+    padding: 0.1rem 0.5rem 0 0.5rem;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.datePicker:focus {
+    border: 2px solid var(--color-accent);
+}
+
+.header__right {
     display: flex;
 }
 
-.filter {
-    font-size: 1.4rem;
-    margin: 0.3rem;
-    text-transform: capitalize;
-    background-color: transparent;
-    color: var(--color-accent);
-    opacity: 0.8;
-    font-weight: bold;
+h2 {
+    font-size: 2rem;
+    text-align: center;
 }
 
-.filter:hover,
-.filter.selected {
-    opacity: 1;
-}
+@media screen and (max-width:500px) {
 
-.filter.selected::after {
-    content: '';
-    display: block;
-    margin-top: 0.2rem;
-    border: 1px solid var(--color-text);
+    .calendar p {
+        display: none;
+    }
+
 }

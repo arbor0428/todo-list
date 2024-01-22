@@ -1,13 +1,21 @@
+.player {
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .form {
-    margin: 1.5rem 0;
+    margin: 0;
     width: 100%;
     position: relative;
 }
 
 .input {
     width: 100%;
-    font-size: 1rem;
-    padding: 1rem 9rem 1rem 2rem;
+    font-size: 0.8rem;
+    padding: 0.6rem 6rem 0.6rem 1rem;
     border: none;
     outline: none;
     border-radius: 2rem;
@@ -22,8 +30,8 @@
     background-color: var(--color-accent);
     color: var(--color-white);
     font-weight: bold;
-    font-size: 1rem;
-    padding: 0 3rem;
+    font-size: 0.8rem;
+    padding: 0 1rem;
     border-radius: 2rem;
 }
 

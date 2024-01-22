@@ -1,0 +1,39 @@
+.stopwatch {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #d2d7db;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 1rem 0;
+
+}
+
+.numbers span {
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Handjet', monospace;
+    color: #757575;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #f16e03;
+    color: #fff;
+}

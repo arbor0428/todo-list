@@ -1,12 +1,30 @@
+h2 {
+    color: var(--color-text);
+}
+
 .container {
-    height: 100%;
-    min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.container__inner {
+    width: 100%;
+}
+
+.list__wrap {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-dark);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
 }
 
 .list {
+    height: 350px;
     flex: 1 1 auto;
-    overflow-y:scroll;
+    overflow-y: scroll;
 }

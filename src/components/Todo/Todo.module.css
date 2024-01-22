@@ -2,37 +2,60 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem;
-    margin: 0.1rem 0;
+    padding: 0.8rem;
+    margin: 0.2rem 0;
     color: var(--color-text);
+    background-color: var(--color-bg-grey);
+    border-radius: 2rem;
 }
 
-.checkbox {
-    width: 1.5rem;
-    height: 1.5rem;
+input[type="checkbox"] {
+    display: none;
 }
 
-.text {
-    flex: 1 1 0%;
-    margin-left: 0.5rem;
-    font-size: 1.5rem;
+label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 25px;
+}
+
+label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+input[type="checkbox"]:checked+label:before {
+    content: "\2713";
+    text-align: center;
+    line-height: 23px;
+    font-size: 23px;
+    color: #fff;
+    background-color: #f16e03;
 }
 
 .icon {
-    width: 26px;
-    height: 26px;
-    background-color: var(--color-grey);
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     transition: all 150ms ease-out;
 }
 
 .icon:hover {
     background-color: var(--color-accent);
-    transform:rotate(15deg) scale(1.2);
+    transform: rotate(15deg) scale(1.2);
 }
 
 .button {
     color: var(--color-text);
     background-color: transparent;
-
+    font-size: 1.3rem;
 }
