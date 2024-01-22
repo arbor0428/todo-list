@@ -59,3 +59,14 @@ input[type="checkbox"]:checked+label:before {
     background-color: transparent;
     font-size: 1.3rem;
 }
+
+@media screen and (max-width:500px) {
+    .icon {
+        transition: none;
+    }
+
+    .icon:hover {
+        transform: none;
+    }
+
+}
